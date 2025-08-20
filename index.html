@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Movie Picker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 Ultimate Movie Picker</h1>
+
+        <!-- Category Selector -->
+        <select id="categorySelect">
+            <option value="default">Default List</option>
+            <option value="action">Action</option>
+            <option value="comedy">Comedy</option>
+            <option value="horror">Horror</option>
+        </select>
+
+        <!-- Movie Input -->
+        <textarea id="movieList" placeholder="Enter movies, one per line (max 100)"></textarea>
+        <button id="pickButton">Pick a Movie!</button>
+
+        <!-- Countdown -->
+        <div id="countdown"></div>
+
+        <!-- Roulette -->
+        <div id="roulette" class="hidden"></div>
+
+        <!-- Result -->
+        <div id="result"></div>
+
+        <!-- History -->
+        <div id="history">
+            <h3>Recent Picks:</h3>
+            <ul id="historyList"></ul>
+        </div>
+    </div>
+
+    <!-- Sound Effects -->
+    <audio id="rollSound" src="https://www.soundjay.com/misc/sounds/dice-roll-1.mp3"></audio>
+    <audio id="dingSound" src="https://www.soundjay.com/button/sounds/button-16.mp3"></audio>
+
+    <!-- Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
